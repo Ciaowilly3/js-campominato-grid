@@ -34,5 +34,10 @@ function gridCreate (numCell){
         cella.style.aspectRatio = 1 / 1;
 
         gridContainerEl.append( cella );
+
+        cella.innerText= i+1;
+        cella.classList.add("d-flex");
+        cella.classList.add("justify-content-center");
+        cella.classList.add("align-items-center");
     }
 }
