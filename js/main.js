@@ -39,5 +39,13 @@ function gridCreate (numCell){
         cella.classList.add("d-flex");
         cella.classList.add("justify-content-center");
         cella.classList.add("align-items-center");
+
+        // aggiungo infine l'evento al click di ogni cella, cosa che posso fare perchè 
+        // sono dentro un for e ogni cella e a sè, in cui la faccio diventare azzura e stampo
+        // il suo numero a ogni click
+        cella.addEventListener("click", function() {
+           cella.classList.toggle("bg-primary");
+           console.log(i+1); 
+        })
     }
 }
